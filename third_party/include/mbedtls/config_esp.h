@@ -309,7 +309,7 @@ int system_get_data_of_array_8(const unsigned char *array, int size);
  *
  * Uncomment this macro to use less memory for Camellia.
  */
-//#define MBEDTLS_CAMELLIA_SMALL_MEMORY
+#define MBEDTLS_CAMELLIA_SMALL_MEMORY
 
 /**
  * \def MBEDTLS_CIPHER_MODE_CBC
@@ -743,7 +743,7 @@ int system_get_data_of_array_8(const unsigned char *array, int size);
  * Disable if you run into name conflicts and want to really remove the
  * mbedtls_strerror()
  */
-#define MBEDTLS_ERROR_STRERROR_DUMMY
+//#define MBEDTLS_ERROR_STRERROR_DUMMY
 
 /**
  * \def MBEDTLS_GENPRIME
@@ -799,7 +799,7 @@ int system_get_data_of_array_8(const unsigned char *array, int size);
  * This option is only useful if both MBEDTLS_SHA256_C and
  * MBEDTLS_SHA512_C are defined. Otherwise the available hash module is used.
  */
-//#define MBEDTLS_ENTROPY_FORCE_SHA256
+#define MBEDTLS_ENTROPY_FORCE_SHA256
 
 /**
  * \def MBEDTLS_MEMORY_DEBUG
@@ -833,7 +833,7 @@ int system_get_data_of_array_8(const unsigned char *array, int size);
  *
  * Comment this macro to disable support for external private RSA keys.
  */
-#define MBEDTLS_PK_RSA_ALT_SUPPORT
+//#define MBEDTLS_PK_RSA_ALT_SUPPORT
 
 /**
  * \def MBEDTLS_PKCS1_V15
@@ -914,7 +914,7 @@ int system_get_data_of_array_8(const unsigned char *array, int size);
  *
  * Enable sending of all alert messages
  */
-#define MBEDTLS_SSL_ALL_ALERT_MESSAGES
+//#define MBEDTLS_SSL_ALL_ALERT_MESSAGES
 
 /**
  * \def MBEDTLS_SSL_DEBUG_ALL
@@ -1005,7 +1005,7 @@ int system_get_data_of_array_8(const unsigned char *array, int size);
  *
  * Comment this macro to disable 1/n-1 record splitting.
  */
-#define MBEDTLS_SSL_CBC_RECORD_SPLITTING
+//#define MBEDTLS_SSL_CBC_RECORD_SPLITTING
 
 /**
  * \def MBEDTLS_SSL_RENEGOTIATION
@@ -1073,7 +1073,7 @@ int system_get_data_of_array_8(const unsigned char *array, int size);
  *
  * Comment this macro to disable support for TLS 1.0
  */
-#define MBEDTLS_SSL_PROTO_TLS1
+//#define MBEDTLS_SSL_PROTO_TLS1
 
 /**
  * \def MBEDTLS_SSL_PROTO_TLS1_1
@@ -1085,7 +1085,7 @@ int system_get_data_of_array_8(const unsigned char *array, int size);
  *
  * Comment this macro to disable support for TLS 1.1 / DTLS 1.0
  */
-#define MBEDTLS_SSL_PROTO_TLS1_1
+//#define MBEDTLS_SSL_PROTO_TLS1_1
 
 /**
  * \def MBEDTLS_SSL_PROTO_TLS1_2
@@ -1363,7 +1363,7 @@ int system_get_data_of_array_8(const unsigned char *array, int size);
  *
  * This modules adds support for the AES-NI instructions on x86-64
  */
-#define MBEDTLS_AESNI_C
+//#define MBEDTLS_AESNI_C
 
 /**
  * \def MBEDTLS_AES_C
@@ -2285,7 +2285,7 @@ int system_get_data_of_array_8(const unsigned char *array, int size);
  *
  * This module provides run-time version information.
  */
-#define MBEDTLS_VERSION_C
+//#define MBEDTLS_VERSION_C
 
 /**
  * \def MBEDTLS_X509_USE_C
